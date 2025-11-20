@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+:root {
+  --sidebar: #120817;
+  --background: #fbf6ff;
+}
+
+@theme {
+  --color-sidebar: var(--sidebar);
+  --color-background: var(--background);
+}
