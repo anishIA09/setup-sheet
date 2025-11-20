@@ -6,8 +6,17 @@
   --sidebar: #120817;
   --primary: #47215e;
   --primary-foreground: #ffffff;
+  --secondary: #e8e3f4;
+  --secondary-foreground: #140b19;
   --card: #ffffff;
   --card-foreground: #0b0a0d;
+  --card-muted: #e8e3f4;
+  --card-heading: #140b19;
+  --table-header: #e5ebf4;
+  /* --table-header-foreground: ;  decide this later */
+  --table-row: #ffffff;
+  /* --table-foreground: ; */
+  --table-selected-row: #f0edf7;
 }
 
 @theme {
@@ -18,4 +27,9 @@
   --color-primary-foreground: var(--primary-foreground);
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
+  --color-card-muted: var(--card-muted);
+  --color-card-heading: var(--card-heading);
+  --color-table-header: var(--table-header);
+  --color-table-row: var(--table-row);
+  --color-table-selected-row: var(--table-selected-row);
 }

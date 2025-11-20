@@ -7,10 +7,10 @@ const DashboardLayout = ({ children }) => {
     <SidebarProvider>
       <div className="h-screen flex">
         <Sidebar />
-        <div className="flex-1 h-full flex flex-col bg-background text-foreground">
+        <main className="flex-1 h-full flex flex-col bg-background text-foreground overflow-hidden">
           <DashboardHeader />
-          <div className="flex-1 p-4">{children}</div>
-        </div>
+          <div className="flex-1 p-4 overflow-y-auto">{children}</div>
+        </main>
       </div>
     </SidebarProvider>
   );
