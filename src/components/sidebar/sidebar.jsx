@@ -64,14 +64,7 @@ export const SidebarHeader = () => {
 
   return (
     <div data-slot="header" className="p-2">
-      <motion.a
-        style={{
-          width: open ? "100%" : "fit-content",
-        }}
-        transition={{
-          duration: 0.3,
-          ease: "easeInOut",
-        }}
+      <a
         href={"/dashboard"}
         className="text-lg font-semibold text-white flex items-center gap-2"
       >
@@ -92,7 +85,7 @@ export const SidebarHeader = () => {
             </motion.span>
           )}
         </AnimatePresence>
-      </motion.a>
+      </a>
     </div>
   );
 };
@@ -138,19 +131,12 @@ export const SidebarContent = () => {
   return (
     <nav className="my-2 flex-1">
       <ul className="flex flex-col gap-1">
-        {navLinks.map((navLink) => {
+        {navLinks.map((navLink, idx) => {
           const IconComponent = navLink.icon;
 
           return (
             <li key={navLink.label}>
-              <motion.a
-                style={{
-                  width: open ? "100%" : "fit-content",
-                }}
-                transition={{
-                  duration: 0.3,
-                  ease: "easeInOut",
-                }}
+              <a
                 href={navLink.href}
                 className={cn(
                   "flex items-center gap-2 px-2 py-1 rounded-md text-sm",
@@ -171,12 +157,13 @@ export const SidebarContent = () => {
                         ease: "easeInOut",
                       }}
                       exit={"closed"}
+                      className="truncate" // NOTE: add this for stopping layout shit while animating
                     >
                       {navLink.label}
                     </motion.span>
                   )}
                 </AnimatePresence>
-              </motion.a>
+              </a>
             </li>
           );
         })}
