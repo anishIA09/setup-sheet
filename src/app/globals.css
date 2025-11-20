@@ -1,11 +1,21 @@
 @import "tailwindcss";
 
 :root {
-  --sidebar: #120817;
   --background: #fbf6ff;
+  --foreground: #2f2931;
+  --sidebar: #120817;
+  --primary: #47215e;
+  --primary-foreground: #ffffff;
+  --card: #ffffff;
+  --card-foreground: #0b0a0d;
 }
 
 @theme {
-  --color-sidebar: var(--sidebar);
   --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-sidebar: var(--sidebar);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
 }

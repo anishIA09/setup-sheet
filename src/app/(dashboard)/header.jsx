@@ -8,7 +8,7 @@ export const DashboardHeader = () => {
   const { setOpen } = useSidebar();
 
   return (
-    <header className="h-[60px] bg-white text-neutral-800 flex items-center justify-between px-4 py-2 border-b border-neutral-300 shadow-sm">
+    <header className="h-[60px] bg-white text-neutral-800 flex items-center justify-between px-4 py-2 border-b border-neutral-300 shadow-sm shrink-0">
       <button
         onClick={() => setOpen((prevState) => !prevState)}
         className="size-7 hover:bg-neutral-300 flex items-center justify-center rounded-md transition-colors duration-300"
