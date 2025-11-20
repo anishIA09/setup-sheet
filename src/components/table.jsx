@@ -80,7 +80,7 @@ export const Table = () => {
 
                 return (
                   <tr
-                    key={user.id}
+                    key={user.userId}
                     className={cn(
                       isSelected ? "bg-table-selected-row" : "bg-table-row"
                     )}
