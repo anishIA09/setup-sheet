@@ -10,10 +10,10 @@ export const SidebarDesktop = () => {
 
   const sidebarVariant = {
     open: {
-      width: "16rem",
+      width: "14rem",
     },
     closed: {
-      width: "4.5rem",
+      width: "4rem",
     },
   };
 

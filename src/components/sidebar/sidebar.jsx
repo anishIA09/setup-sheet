@@ -139,13 +139,13 @@ export const SidebarContent = () => {
               <a
                 href={navLink.href}
                 className={cn(
-                  "flex items-center gap-2 px-2 py-1 rounded-md text-sm",
+                  "flex items-center gap-2 px-2 h-9 rounded-md text-sm",
                   pathname === navLink.href
                     ? "bg-[linear-gradient(to_right,#863EB8,#062B8A)] text-white"
                     : "hover:bg-slate-800 hover:text-white transition-colors duration-300"
                 )}
               >
-                <div className="size-9 flex items-center justify-center shrink-0">
+                <div className="w-9 h-full flex items-center justify-center shrink-0">
                   <IconComponent size={20} />
                 </div>
                 <AnimatePresence>
