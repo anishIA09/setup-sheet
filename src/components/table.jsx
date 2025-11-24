@@ -82,7 +82,9 @@ export const Table = () => {
                   <tr
                     key={user.userId}
                     className={cn(
-                      isSelected ? "bg-table-selected-row" : "bg-table-row"
+                      isSelected
+                        ? "bg-table-selected-row border-l-4 border-l-[#863EB8]"
+                        : "bg-table-row"
                     )}
                   >
                     {columns.map((column, idx) => {
